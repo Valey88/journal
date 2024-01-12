@@ -1,0 +1,547 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Comfortaa';
+    color: #000000;
+}
+
+.container{
+    width: 500px;
+    margin: 0 auto;
+    padding: 0;
+    padding-bottom: 100px;
+}
+
+button {
+    font-family: 'Comfortaa';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+button:hover {
+    background-color: #D7DFF2;
+}
+
+/* Fonts */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../fonts/static/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../fonts/static/Comfortaa-Light.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(../fonts/static/Comfortaa-Regular.ttf);
+}
+
+/* header */
+
+header {
+    background: #d8d8d8;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .container {
+    padding-bottom: 0;
+}
+
+.header_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_block a {
+    font-family: "Comfortaa";
+    font-size: 23px;
+    text-decoration: none;
+}
+
+.header_block a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+    background: none;
+    transition: 0.5s;
+
+    width: 45%;
+    height: 52px;
+    color:black;
+}
+
+.header_block a:hover {
+    background: #1F3856;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* content */
+
+.content, .content-attendance {
+    display: grid;
+    justify-content: center;
+}
+
+.content_block {
+    display: grid;
+    justify-content: center;
+}
+
+.content_block h1, .content_object_block h1 {
+    font-size: 50px;
+    margin: 80px 0 100px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.my_objects_block, .my_subjects_block {
+    display: grid;
+    justify-content: center;
+}
+
+.my_objects button, .my_subjects button {
+    width: 500px;
+    height: 60px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+
+    transition: 0.5s;
+}
+
+.my_objects button:hover, .my_subjects button:hover{
+    transition: 0.5s;
+    background-color: #D7DFF2;
+}
+
+.add_objects_block div div {
+    width: 500px;
+    height: 60px;
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+}
+
+.add_object_button, .add_subjects_button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add_object_button p, .add_subjects_button p {
+    font-size: 23px;
+    text-decoration: underline;
+}
+
+.add_object_button button, .add_subjects_button button {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 3px solid #1F3856;
+    border-radius: 15px;
+}
+
+.add_object_button button img, .add_subjects_button button img {
+    transition: 1s;
+}
+
+.add_object_button button:hover img, .add_subjects_button button:hover img {
+    transform: rotate(180deg);
+    transition: 1s;
+}
+
+/* login_form */
+
+.login_form {
+    display: flex;
+    justify-content: center;
+}
+
+.login_form_block {
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_form_block form {
+    width: 100%;
+    height: 500px;
+
+    padding: 40px 25px 60px 25px;
+
+    border-radius: 35px;
+    border: 3px solid #1F3856;
+    background: #EFFAFD;
+}
+
+.login_form_heading {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.login_form_block form h1 {
+    font-size: 30px;
+    padding-bottom: 30px;
+}
+
+.login_form_heading div {
+    display: flex;
+    justify-content: center;
+}
+
+.login_form_heading div div {
+    width: 200px;
+    height: 2px;
+    border-bottom: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.login_form_input {
+    display: grid;
+}
+
+.login_form_input label {
+    padding-bottom: 5px;
+}
+
+.login_form_input input {
+    height: 60px;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+    background: none;
+    padding: 5px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.login_form_input input[type="text"], input[type="password"] {
+    font-family: "Comfortaa";
+    font-size: 20px;
+}
+
+.login_form_block_buttons, .add_object_block_buttons, .back_buttons {
+    display: flex;
+    gap: 50px;
+}
+
+.login_form_block_buttons button, .add_object_block_buttons button, .back_buttons button {
+    width: 100%;
+    border-radius: 15px;
+    background: #1F3856;
+    height: 60px;
+    color: #ffffff;
+    border: none;
+    transition: 0.5s;
+}
+
+.login_form_block_buttons button:hover, .add_object_block_buttons button:hover, .back_buttons button:hover {
+    transition: 0.5s;
+    background-color: #2e4580;
+}
+
+/* add object */
+
+.add_object .container {
+    width: 548px;
+}
+
+.add_objects_block div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reminders_block div {
+    display: flex;
+}
+
+.add_objects_block div div, .reminders_block div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+}
+
+
+.add_objects_block div button {
+    width: 450px;
+    height: 60px;
+    margin-bottom: 50px;
+
+    font-size: 23px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+}
+
+
+
+.add_objects_block div button:hover {
+    transition: 0.5s;
+    background-color: #D7DFF2;
+}
+
+.add_objects_block div label, .reminders_block div label{
+    max-height: 60px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reminders_block div label {
+    margin-right: 25px;
+}
+
+.number_lesson {
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+    background-color: #EFFAFD;
+}
+
+.add_objects_block div label input[type="checkbox"], .reminders_block div label input[type="checkbox"] {
+    appearance:none;
+    width: 55px;
+    height: 55px;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+    background-color: #EFFAFD;
+
+}
+
+.close {
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+
+
+.add_objects_block div .label_select input[type="checkbox"]:checked  {
+    background: url("../img/selected.png") no-repeat center;
+}
+
+.reminders_block div label input:checked {
+    background: url("../img/selected.png") no-repeat center;
+}
+
+.reminders_block div label input:checked + .reminders_block div div {
+    text-decoration: line-through;
+}
+
+.add_objects_block div .label_close input[type="checkbox"]:checked {
+    background: url("../img/close.png") no-repeat center;
+
+}
+
+.add_objects_block div label input[type="checkbox"]:checked {
+    background: url("../img/selected.png") no-repeat center;
+
+}
+
+
+
+/* attendance */
+
+.content-attendance .container {
+    width: 90vw;
+}
+
+
+.table {
+    width: 100%;
+    border: none;
+    margin-bottom: 20px;
+}
+
+.table_heading {
+    display: grid;
+    justify-content: center;
+    padding-top:40px;
+}
+
+.table_heading h1{
+    display: flex;
+    text-align: center;
+    justify-content:center;
+    padding-bottom: 20px;
+    
+}
+
+
+.table thead th {
+    font-weight: bold;
+    text-align: left;
+    border: none;
+    padding: 10px 15px;
+    background: #d8d8d8;
+    font-size: 14px;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+
+
+.table tbody td {
+    text-align: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    padding: 10px 15px;
+    font-size: 14px;
+    vertical-align: top;
+}
+.table thead tr th:first-child, .table tbody tr td:first-child {
+    border-left: none;
+}
+.table thead tr th:last-child, .table tbody tr td:last-child {
+    border-right: none;
+}
+.table tbody tr:nth-child(even){
+    background: #f3f3f3;
+}
+
+
+/* dropdown */
+
+/* Кнопка выпадающего списка */
+.dropbtn {
+    background-color: #1F3856;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 15px;
+}
+
+.dropbtn:hover {
+    background-color: #2e4580;
+}
+
+/* Контейнер <div> - необходим для размещения выпадающего содержимого */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 97px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Ссылки внутри выпадающего списка */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Изменение цвета выпадающих ссылок при наведении курсора */
+.dropdown-content a:hover {background-color: #ddd;}
+
+/* Показать выпадающее меню при наведении курсора */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Изменение цвета фона кнопки раскрывающегося списка при отображении содержимого раскрывающегося списка */
+.dropdown:hover .dropbtn {background-color: #1F3856;}
+
+/* filter */
+
+
+.hide {
+    display: none !important;
+}
+
+.dropdown_filter_block {
+    display: flex;
+    justify-content: center;
+    grid-gap: 30px;
+    padding: 30px 0 50px 0;
+}
+
+.filter_button {
+    border: none;
+    background: none;
+    padding: 10px 10px;
+}
+
+.dropdown-content:not(:last-child) {
+    border-bottom: 2px solid #000000;
+}
+
+.filter_button:hover {
+    background: #6D6E83;
+}
+
+/*add subject*/
+.add_subject_input {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 50px;
+
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Comfortaa';
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: none;
+    border-radius: 15px;
+    border: 3px solid #1F3856;
+
+    transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
